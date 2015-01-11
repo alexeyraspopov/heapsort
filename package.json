@@ -1,0 +1,21 @@
+{
+  "name": "heapsort",
+  "version": "0.0.0",
+  "description": "A JavaScript Heapsort Algorithm Implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "alexeyraspopov/heapsort",
+  "keywords": [
+    "sorting",
+    "algorithm",
+    "heapsort"
+  ],
+  "author": "Alexey Raspopov (https://github.com/alexeyraspopov)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexeyraspopov/heapsort/issues"
+  },
+  "homepage": "https://github.com/alexeyraspopov/heapsort"
+}
