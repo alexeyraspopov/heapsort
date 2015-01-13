@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/alexeyraspopov/heapsort/issues"
   },
-  "homepage": "https://github.com/alexeyraspopov/heapsort"
+  "homepage": "https://github.com/alexeyraspopov/heapsort",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jasmine": "^2.0.0"
+  }
 }
