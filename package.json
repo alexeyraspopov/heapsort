@@ -4,7 +4,7 @@
   "description": "A JavaScript Heapsort Algorithm Implementation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel/register tests.js"
   },
   "repository": "alexeyraspopov/heapsort",
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/alexeyraspopov/heapsort",
   "devDependencies": {
-    "gulp": "^3.8.10",
-    "gulp-jasmine": "^2.0.0"
+    "babel": "~5.8.23",
+    "mocha": "~2.3.0"
   }
 }
