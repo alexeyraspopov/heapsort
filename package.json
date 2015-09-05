@@ -4,7 +4,8 @@
   "description": "A JavaScript Heapsort Algorithm Implementation",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register tests.js"
+    "test": "mocha --compilers js:babel/register tests/*.js",
+    "prepublish": "browserify -r ./lib/index.js -s heapsort -t babelify > heapsort.js"
   },
   "repository": "alexeyraspopov/heapsort",
   "keywords": [
@@ -20,6 +21,8 @@
   "homepage": "https://github.com/alexeyraspopov/heapsort",
   "devDependencies": {
     "babel": "~5.8.23",
+    "babelify": "~6.3.0",
+    "browserify": "~11.0.1",
     "mocha": "~2.3.0"
   }
 }
