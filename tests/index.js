@@ -1,5 +1,5 @@
 import assert from "assert";
-import heapsort from "./index";
+import heapsort from "../lib/index";
 
 it("should sort", function(){
 	const MSG = "should be sorted";
