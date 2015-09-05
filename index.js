@@ -4,6 +4,6 @@ function ascendantComparator(a, b){
 	return a - b;
 }
 
-function heapsort(array, comparator) {
+function heapsort(array, comparator=ascendantComparator) {
 	// TODO: implement heapsort
 }
