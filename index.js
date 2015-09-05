@@ -1,8 +1,9 @@
+export default heapsort;
+
 function ascendantComparator(a, b){
 	return a - b;
 }
 
-module.exports = function(array, comparator){
-	comparator = comparator || ascendantComparator;
-
-};
+function heapsort(array, comparator) {
+	// TODO: implement heapsort
+}
