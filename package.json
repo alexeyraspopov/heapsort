@@ -2,7 +2,7 @@
   "name": "heapsort",
   "version": "0.0.0",
   "description": "A JavaScript Heapsort Algorithm Implementation",
-  "main": "index.js",
+  "main": "heapsort.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register tests/*.js",
     "prepublish": "browserify -r ./lib/index.js -s heapsort -t babelify > heapsort.js"
