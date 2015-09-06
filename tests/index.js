@@ -8,3 +8,11 @@ it("should sort", function simpleSortTest() {
 
 	assert.deepEqual(actual, expected, MSG);
 });
+
+it("should sort an array with duplicated items", function duplicatedItemsSort() {
+	const MSG = "should be properly sorted";
+	const actual = heapsort([4, 5, 5, 1, 3, 8, 6, 2, 9, 7, 6, 0]);
+	const expected = [0, 1, 2, 3, 4, 5, 5, 6, 6, 7, 8, 9];
+
+	assert.deepEqual(actual, expected, MSG);
+});
