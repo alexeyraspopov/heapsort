@@ -2,6 +2,10 @@
 
 A JavaScript Heapsort implementation with `O(nlog n)` complexity.
 
+## Install
+
+	npm install heapsort
+
 ## API
 
 	heapsort(array[, comparator]);
@@ -12,4 +16,4 @@ Comparator is a function which compares two elements and returns 0, 1 or -1. [Re
 
 ## License
 
-MIT License &copy; Alexey Raspopov
+MIT License (c) Alexey Raspopov
