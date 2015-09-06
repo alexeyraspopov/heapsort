@@ -1,6 +1,6 @@
 {
   "name": "heapsort",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A JavaScript Heapsort Algorithm Implementation",
   "main": "heapsort.js",
   "scripts": {
