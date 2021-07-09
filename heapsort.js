@@ -1,10 +1,5 @@
-export default heapsort;
-
-const {floor} = Math;
-
-function heapsort(array, comparator = ascendantComparator) {
-	const count = array.length;
-	let end = count - 1;
+export default function heapsort(array, comparator = ascendantComparator) {
+	let end = array.length - 1;
 
 	heapify(array, comparator);
 
@@ -22,8 +17,8 @@ function ascendantComparator(a, b) {
 }
 
 function heapify(array, comparator) {
-	const count = array.length;
-	let start = floor((count - 2) / 2);
+	let count = array.length;
+	let start = Math.floor((count - 2) / 2);
 
 	while (start >= 0) {
 		siftDown(array, start, count - 1, comparator);
@@ -35,8 +30,8 @@ function siftDown(array, start, end, comparator) {
 	let root = start;
 
 	while (root * 2 + 1 <= end) {
-		const lChild = root * 2 + 1;
-		const rChild = lChild + 1;
+		let lChild = root * 2 + 1;
+		let rChild = lChild + 1;
 		let swap = root;
 
 		if (comparator(array[swap], array[lChild]) < 0) {
@@ -57,7 +52,7 @@ function siftDown(array, start, end, comparator) {
 }
 
 function swapElems(array, a, b) {
-	const tmp = array[a];
+	let tmp = array[a];
 	array[a] = array[b];
 	array[b] = tmp;
 }
