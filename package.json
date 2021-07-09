@@ -1,12 +1,18 @@
 {
   "name": "heapsort",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A JavaScript Heapsort Algorithm Implementation",
-  "main": "heapsort.js",
+  "main": "./heapsort.js",
+  "module": "./heapsort.js",
+  "exports": "./heapsort.js",
+  "type": "module",
+  "files": [
+    "heapsort.js"
+  ],
   "scripts": {
-    "test": "mocha --compilers js:babel/register tests/*.js",
-    "prepublish": "browserify -r ./lib/index.js -s heapsort -t babelify > heapsort.js"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
+  "sideEffects": false,
   "repository": "alexeyraspopov/heapsort",
   "keywords": [
     "sorting",
@@ -20,9 +26,9 @@
   },
   "homepage": "https://github.com/alexeyraspopov/heapsort",
   "devDependencies": {
-    "babel": "~5.8.23",
-    "babelify": "~6.3.0",
-    "browserify": "~11.0.1",
-    "mocha": "~2.3.0"
+    "jest": "^27.0.6"
+  },
+  "jest": {
+    "transform": {}
   }
 }
